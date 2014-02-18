@@ -36,3 +36,6 @@ setInterval(function () {
     current_user.set({username: mod_a});
 }, 500);
 
+setTimeout(function () {
+  UserView.prototype.template = _.template("<h1><%= username %></h1><h4><%= name %></h4>");
+}, 5000);
